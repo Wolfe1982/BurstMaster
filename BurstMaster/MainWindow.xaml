@@ -1,0 +1,41 @@
+﻿<Controls:MetroWindow x:Class="BurstMaster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:BurstMaster"
+        mc:Ignorable="d"
+        Title="Burst Master v1.0.0" Height="600" Width="500"
+                      
+        BorderThickness="0" 
+        GlowBrush="Black"
+        ResizeMode="NoResize"
+
+        WindowTransitionsEnabled="False"
+        WindowStartupLocation="CenterScreen">
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="settings" />
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+
+
+
+    <Grid>
+        <GroupBox x:Name="automaticCheck_enabled" Header="Automatic Magic Burster" HorizontalAlignment="Left" Height="71" Margin="10,10,0,0" VerticalAlignment="Top" Width="474" Grid.Row="0">
+            <Grid HorizontalAlignment="Left" Height="46" Margin="0,-10,-2,-4" VerticalAlignment="Top" Width="412">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="249*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="161*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="POLID" HorizontalAlignment="Left" Margin="2,13,0,0" VerticalAlignment="Top" Width="247" Height="26"/>
+                <Button x:Name="SelectPOLID" Content="Select" Grid.Column="2" HorizontalAlignment="Left" Margin="2,13,0,0" VerticalAlignment="Top" Width="72" Click="SelectPOLIDButton_Click" Height="26"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Controls:MetroWindow>
